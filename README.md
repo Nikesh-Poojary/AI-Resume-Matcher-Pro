@@ -1,44 +1,122 @@
-🚀 Resume Relevance Analysis System
-This project is a web application designed to streamline the process of matching resumes to job descriptions. It provides a platform for placement teams to manage job postings and for them to upload student resumes, with an automated system for relevance analysis and scoring.
+Placement Resume Evaluation System
 
-✨ Features
-1. Data Ingestion 📥
-Job Description (JD) and Resume Upload: The placement team can upload both job descriptions and student resumes in PDF or DOCX format.
+A web-based platform that helps placement teams and HRs efficiently evaluate resumes against job descriptions using LLM-powered parsing and scoring.
 
-2. Parsing & Extraction 🔍
-Resume Parsing: The system extracts raw text from resumes and standardizes the format for consistent analysis.
+The system allows HRs to:
 
-JD Parsing: Key information such as role title, required skills, and qualifications are extracted from the job description.
+Upload job descriptions and resumes.
 
-3. Relevance Analysis 🧠
-Hard Match: Performs a keyword and skill-based matching to identify exact and fuzzy matches between the resume and JD.
+Automatically parse resumes and match them against job requirements.
 
-Semantic Match: Utilizes Large Language Models (LLMs) to perform a deeper analysis by comparing the semantic similarity of the resume and JD.
+Assign relevance scores to each resume.
 
-Scoring & Verdict: A weighted scoring formula calculates a final relevance score (0-100) and provides a suitability verdict (High, Medium, or Low).
+Save shortlisted resumes for later reference.
 
-4. Output Generation 📊
-Relevance Score: A percentage score indicating how well the resume matches the JD.
+Search and filter resumes based on job role, location, and score.
 
-Detailed Feedback: Provides a list of missing skills, projects, or certifications.
+🚀 Tech Stack
 
-Suggestions for Improvement: Offers actionable suggestions to help students improve their resumes.
-
-5. Storage & Access 💾
-All results, including parsed data, scores, and verdicts, are stored in a database.
-
-The placement team can easily search and filter resumes by job role, relevance score, and location.
-
-6. Web Application 🖥️
-Placement Team Dashboard: A central dashboard for the placement team to upload JDs, view submitted resumes, and see a list of shortlisted candidates.
-
-User Interface: Provides a user-friendly interface for the placement team to upload resumes and receive instant feedback.
-
-🛠️ Technology Stack
 Frontend: Next.js
 
-Backend: Next.js API Routes (or Express.js)
+Backend: Express.js
 
 Database: MongoDB
 
-Language Models (LLMs): Used for semantic matching and suggestions.
+AI/LLM API: Gemini
+
+📂 Features
+
+✅ Resume parsing using Gemini LLM API
+
+✅ Automatic resume-to-job-description matching
+
+✅ Scoring system for ranking resumes
+
+✅ HR can save shortlisted resumes
+
+✅ Search & filter functionality:
+
+By job role
+
+By location
+
+By score
+
+⚙️ Installation & Setup
+1. Clone the Repository
+git clone https://github.com/your-username/placement-resume-evaluation.git
+cd placement-resume-evaluation
+
+2. Install Dependencies
+# Install frontend dependencies
+cd frontend
+npm install  
+
+# Install backend dependencies
+cd ../backend
+npm install
+
+3. Configure Environment Variables
+
+Create a .env file in both frontend and backend with the following:
+
+Backend .env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+GEMINI_API_KEY=your_gemini_api_key
+
+Frontend .env
+NEXT_PUBLIC_BACKEND_URL=http://localhost:5000
+
+4. Run the Application
+# Start backend server
+cd backend
+npm start
+
+# Start frontend
+cd ../frontend
+npm run dev
+
+
+The app will be available at:
+👉 http://localhost:3000
+
+📊 Project Workflow
+
+HR uploads Job Description
+
+HR uploads Resumes (PDF/DOC)
+
+Backend sends data to Gemini API
+
+Gemini parses and assigns a matching score
+
+Results are stored in MongoDB
+
+HR can:
+
+View scored resumes
+
+Save preferred candidates
+
+Search/filter resumes
+
+🛠️ Future Enhancements
+
+📌 Role-based authentication (HR/Admin)
+
+📌 Export shortlisted resumes as CSV/PDF
+
+📌 Email notifications to selected candidates
+
+📌 Support for multiple LLM providers (OpenAI, Anthropic)
+
+📌 Improved scoring algorithm with ML fine-tuning
+
+🤝 Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+📜 License
+
+This project is licensed under the MIT License.

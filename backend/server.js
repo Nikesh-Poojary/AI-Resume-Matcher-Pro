@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
-const PORT = 3001;
+const PORT = process.env.PORT || 5000;
 
 // A dictionary of common skills to look for
 const SKILLS_DICTIONARY = [

@@ -1,51 +1,39 @@
-Placement Resume Evaluation System
+# Placement Resume Evaluation System  
 
-A web-based platform that helps placement teams and HRs efficiently evaluate resumes against job descriptions using LLM-powered parsing and scoring.
+A web-based platform that helps placement teams and HRs efficiently evaluate resumes against job descriptions using **LLM-powered parsing and scoring**.  
 
-The system allows HRs to:
+The system allows HRs to:  
+- Upload **job descriptions** and **resumes**.  
+- Automatically **parse resumes** and **match them** against job requirements.  
+- Assign **relevance scores** to each resume.  
+- **Save shortlisted resumes** for later reference.  
+- **Search and filter resumes** based on job role, location, and score.  
 
-Upload job descriptions and resumes.
+---
 
-Automatically parse resumes and match them against job requirements.
+## 🚀 Tech Stack  
 
-Assign relevance scores to each resume.
+- **Frontend:** [Next.js](https://nextjs.org/)  
+- **Backend:** [Express.js](https://expressjs.com/)  
+- **Database:** [MongoDB](https://www.mongodb.com/)  
+- **AI/LLM API:** [Gemini](https://ai.google.dev/gemini-api)  
 
-Save shortlisted resumes for later reference.
+---
 
-Search and filter resumes based on job role, location, and score.
+## 📂 Features  
 
-🚀 Tech Stack
+- ✅ Resume parsing using **Gemini LLM API**  
+- ✅ Automatic **resume-to-job-description matching**  
+- ✅ **Scoring system** for ranking resumes  
+- ✅ HR can **save shortlisted resumes**  
+- ✅ **Search & filter** functionality:  
+  - By **job role**  
+  - By **location**  
+  - By **score**  
 
-Frontend: Next.js
+---
 
-Backend: Express.js
-
-Database: MongoDB
-
-AI/LLM API: Gemini
-
-📂 Features
-
-✅ Resume parsing using Gemini LLM API
-
-✅ Automatic resume-to-job-description matching
-
-✅ Scoring system for ranking resumes
-
-✅ HR can save shortlisted resumes
-
-✅ Search & filter functionality:
-
-By job role
-
-By location
-
-By score
-
-⚙️ Installation & Setup
-1. Clone the Repository
-git clone https://github.com/your-username/placement-resume-evaluation.git
-cd placement-resume-evaluation
+## ⚙️ Installation & Setup  
 
 2. Install Dependencies
 # Install frontend dependencies
@@ -116,7 +104,3 @@ Search/filter resumes
 🤝 Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
-
-📜 License
-
-This project is licensed under the MIT License.
